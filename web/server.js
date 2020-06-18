@@ -19,3 +19,8 @@ client.on('connect', function () {
     }
   })
 })
+
+client.subscribe('home/room/lamp/+')
+client.on('message', function (topic, message) {
+  console.log("topic: "+ topic.valueOf() +" - message: " + message.toString())
+})
