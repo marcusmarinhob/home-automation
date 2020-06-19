@@ -1,11 +1,11 @@
 html {
     font-family: 'Roboto', sans-serif;
     background-color: #f1f0f5;
+    padding: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif; 
 }
 
 #page-home{    
@@ -13,29 +13,41 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-#page-home header{
-    font-size: x-large;
+#page-home header{    
     margin-top: 70px;
     height: 100px;
     display: grid;
-    grid-template-columns: 60% 14%;
+    grid-template-columns: 80% 20%;
     align-items: center;    
-    background-color: #6832c8;
-    color: white;
+    /* background-color: #6832c8; */    
     justify-content: center;
     border-radius: 20px;
 }
 
-#page-home header h1{
-    justify-self: center;
+#page-home header .title h1{
+    margin-bottom: 0;
+    font-weight: 600;
+    /* display: flex; */
+    color: #6832c8;
     margin: 0;
+    font-size: 80px;
+    border-radius: 20px;
+}
+
+#page-home header .title h2{
+    margin-bottom: 0;
+    display: flex;    
+    color: black;
+    font-size: 70px;
+    margin: 0;
+    /* justify-content: center; */
 }
 
 #page-home header img{
-    width: 70%; 
-    height: 70%; 
+    width: 100%; 
+    height: 100%; 
+    justify-self: right;
     object-fit: contain; 
-    justify-self: center;
 }
 
 form{
@@ -46,7 +58,7 @@ form{
 }
 
 form fieldset{
-    margin-top: 64px;
+    margin-top: 94px;
     margin-bottom: 20px;
     border: 0;
     padding: 0;
