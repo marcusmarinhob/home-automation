@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+
+    <title>Home Automation</title>
+
+    <link rel="stylesheet" href="/styles/home-automation.css">  
+</head>
+
+<body>
+    <div id= "page-home">
+        <header>
+            <h1>Home Automation</h1>
+        </header>
+        <main>
+            <form action="/home-room">
+                <fieldset>
+                    <legend>
+                        <h2>Room</h2>
+                    </legend>
+
+                    <div class="items-grid">
+                        <li data-id="1">
+                            <img id="lamp1" src="assets/lamp_off.png">
+                            <span>Lamp 1</span>
+                        </li>  
+                        
+                        <li data-id="2">
+                            <img id="lamp2" src="assets/lamp_off.png">
+                            <span>Lamp 2</span>
+                        </li> 
+
+                        <li data-id="3">
+                            <img id="lamp3" src="assets/lamp_off.png">
+                            <span>Lamp 3</span>
+                        </li> 
+                    </div>    
+                    <input type="hidden" name="items" value="">                
+                </fieldset>
+            </form>
+
+        </main>
+
+        <script src="scripts/home-automation.js"></script>    
+    </div>
+</body>
+</html>

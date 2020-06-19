@@ -2,9 +2,12 @@
 const express = require("express")
 const server = express()
 
+server.use(express.static("public"))
+server.use(express.urlencoded({ extended: true}))
+
 server.listen(3000)
 server.get("/", function(req, res){
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/views/index.html")
 })
 
 /** MQTT Client *********************************** */
