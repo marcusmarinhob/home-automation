@@ -1,5 +1,6 @@
 html {
     font-family: 'Roboto', sans-serif;
+    background-color: #f1f0f5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,11 +14,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-home header{
+    font-size: x-large;
     margin-top: 70px;
     height: 100px;
     display: flex;
     align-items: center;    
-    background-color: #555555;
+    background-color: #6832c8;
     color: white;
     justify-content: center;
     border-radius: 20px;
@@ -25,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 form{
     display: flex;
-    background-color: white;
+    /* background-color: white; */
     margin-top: 40px;    
     border-radius: 8px;
 }
@@ -45,7 +47,7 @@ form fieldset .items-grid{
 }
 
 form fieldset .items-grid li{
-    background-color: #444444;
+    background-color: #6832c8;
     list-style: none;
     border-radius: 20px;
     height: 150px;
@@ -62,17 +64,22 @@ form fieldset .items-grid li{
 
 form fieldset .items-grid li span{
     margin-top: 12px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     flex: 1;
     display: flex;
     align-items: center;
-    color: #e1faec;
+    color: whitesmoke;
     pointer-events: none;
 }
 
 form fieldset .items-grid li.selected{
-    background: #999999;
-    border: 2px solid #fbb03b;
+    background: rgba(255, 255, 255, 0.733);
+    border: 2px solid #6832c8;
+}
+
+form fieldset .items-grid li.selected span{
+    color: #6832c8;
 }
 
 form fieldset .items-grid li img{
