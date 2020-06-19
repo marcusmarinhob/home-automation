@@ -1,0 +1,83 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+#page-home{    
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+#page-home header{
+    margin-top: 70px;
+    height: 100px;
+    display: flex;
+    align-items: center;    
+    background-color: #555555;
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    background-color: white;
+    margin-top: 40px;    
+    border-radius: 8px;
+}
+
+form fieldset{
+    margin-top: 64px;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 0;
+}
+
+form fieldset .items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+form fieldset .items-grid li{
+    background-color: #444444;
+    list-style: none;
+    border-radius: 20px;
+    height: 150px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: center;
+    cursor: pointer;
+}
+
+form fieldset .items-grid li span{
+    margin-top: 12px;
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #e1faec;
+    pointer-events: none;
+}
+
+form fieldset .items-grid li.selected{
+    background: #999999;
+    border: 2px solid #fbb03b;
+}
+
+form fieldset .items-grid li img{
+    width: 60%; 
+    height: 60%; 
+    object-fit: contain; 
+}
+
